@@ -3817,6 +3817,10 @@ address .address.in-view a span {
     display: none
 }
 
+.business-info a {
+    display: contents;
+}
+
 .ot {
     margin-top: 55vh
 }
@@ -6508,10 +6512,6 @@ address .address.in-view a span {
     #contact .homepage-footer .business-info {
         width: 70%;
         font-size: .75em
-    }
-
-    .business-info a {
-        display: contents;
     }
 
     #contact .homepage-footer .f-image {
