@@ -6355,7 +6355,8 @@ address .address.in-view a span {
 
     #project-slideout .menu {
         left: calc(10px + 25%);
-        font-size: 7vw
+        /* font-size: 7vw */
+        font-size: 6vw
     }
 
     #project-slideout .menu a {
