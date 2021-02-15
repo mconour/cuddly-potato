@@ -5507,7 +5507,8 @@ address .address.in-view a span {
 }
 
 .p-header span {
-    display: inline-block
+    display: inline-block;
+    text-transform: uppercase;
 }
 
 .p-header .p-year {
@@ -6359,7 +6360,8 @@ address .address.in-view a span {
 
     #project-slideout .menu a {
         font-weight: 800;
-        line-height: 17vh;
+        /* line-height: 17vh; */
+        line-height: 10vh;
         position: relative;
         -webkit-tap-highlight-color: rgba(255, 255, 255, 0)
     }
