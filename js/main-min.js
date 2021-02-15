@@ -281,8 +281,8 @@ setTimeout(function () {
         if ($(".ea").length > 0) {          
             var n = document.querySelector(".email-address-1"),
                 o = document.querySelector(".email-address-2");
-            n.innerHTML = `<a href="mailto:michaelconour@gmail.com"><span>View Resume</span></a>`, 
-            o.innerHTML = `<a href="mailto:michaelconour@gmail.com"><span>View Resume</span></a>`;   
+            n.innerHTML = `<a href="mailto:michaelconour@gmail.com"><span>michaelconour@gmail</span></a>`, 
+            o.innerHTML = `<a href="mailto:michaelconour@gmail.com"><span>michaelconour@gmail</span></a>`;   
         }
 
         $(".scroll-top").length > 0 && $(window).width() < 1024 && $("div[name='#wrapper']").click(function () {
