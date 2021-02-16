@@ -372,9 +372,9 @@ setTimeout(function () {
             $("#project-slideout").length > 0 && $(window).width() > 1024 && $(".menu a").hover(function () {
                 $(".menu a").addClass("fade");
                 $(this).removeClass("fade").addClass("active");
-                $(".project-count span").removeClass("show"), $(".project-count .placeholder, .service-placeholder").addClass("fade"), $("." + $(this).data("pc")).addClass("active")
+                $(".project-count span").removeClass("show"), $(".project-count .placeholder, .contributions-placeholder").addClass("fade"), $("." + $(this).data("pc")).addClass("active")
             }, function () {
-                $(this).removeClass("active"), $(".menu a").removeClass("fade"), $("." + $(this).data("pc")).removeClass("active"), $(".project-count .placeholder, .service-placeholder").removeClass("fade")
+                $(this).removeClass("active"), $(".menu a").removeClass("fade"), $("." + $(this).data("pc")).removeClass("active"), $(".project-count .placeholder, .contributions-placeholder").removeClass("fade")
             })
         }), $("#style-switch").on("click", function () {
             $("body").toggleClass("slovakia"), $("body").hasClass("slovakia") ? $(this).html("Off") : $(this).html("On")

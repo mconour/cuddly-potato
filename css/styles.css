@@ -2027,16 +2027,6 @@ template {
     animation-name: rollOut
 }
 
-/* .BodyCopy {
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
-    font-display: auto;
-    font-weight: 500;
-    padding: 0;
-    overscroll-behavior: none
-} */
-
-
 svg.distortion {
     position: absolute
 }
@@ -5794,12 +5784,12 @@ address .address.in-view a span {
     font-weight: normal
 }
 
-.service-placeholder {
+.contributions-placeholder {
     font-size: .75em;
     overflow: hidden
 }
 
-.service-placeholder span {
+.contributions-placeholder span {
     transition: all 350ms cubic-bezier(0.77, 0, 0.175, 1);
     -webkit-transition: all 350ms cubic-bezier(0.77, 0, 0.175, 1);
     -moz-transition: all 350ms cubic-bezier(0.77, 0, 0.175, 1);
@@ -5807,7 +5797,7 @@ address .address.in-view a span {
     display: inline-block
 }
 
-.service-placeholder.fade span {
+.contributions-placeholder.fade span {
     transform: translateY(100%);
     -moz-transform: translateY(100%);
     -webkit-transform: translateY(100%);
@@ -5861,7 +5851,7 @@ address .address.in-view a span {
     transition-delay: 0.1s
 }
 
-.project-count-wrap {
+.proj-counter-wrapper {
     position: absolute;
     right: 77%;
     bottom: 80px;
@@ -5869,7 +5859,7 @@ address .address.in-view a span {
     overflow: hidden
 }
 
-.project-count-wrap span {
+.proj-counter-wrapper span {
     font-size: 2vw;
     display: inline-block;
     position: absolute;
@@ -5887,7 +5877,7 @@ address .address.in-view a span {
     -ms-transform: translateX(100%)
 }
 
-.project-count-wrap span.active {
+.proj-counter-wrapper span.active {
     transform: translateX(0%);
     -moz-transform: translateX(0%);
     -webkit-transform: translateX(0%);
@@ -5900,7 +5890,7 @@ address .address.in-view a span {
     transition-delay: 0.2s
 }
 
-.project-count-wrap span.placeholder {
+.proj-counter-wrapper span.placeholder {
     position: static;
     transform: translateX(0%);
     -moz-transform: translateX(0%);
@@ -5910,7 +5900,7 @@ address .address.in-view a span {
     opacity: .2
 }
 
-.project-count-wrap span.placeholder.fade {
+.proj-counter-wrapper span.placeholder.fade {
     transform: translateX(100%);
     -moz-transform: translateX(100%);
     -webkit-transform: translateX(100%);
@@ -6109,7 +6099,6 @@ address .address.in-view a span {
         margin-left: -20px
     }
 
-    #awards .awards-list,
     #work .no-list {
         margin-top: 15vh
     }
@@ -6386,7 +6375,7 @@ address .address.in-view a span {
 
 
     #project-slideout .p-service-list,
-    #project-slideout .project-count-wrap {
+    #project-slideout .proj-counter-wrapper {
         display: none
     }
 
