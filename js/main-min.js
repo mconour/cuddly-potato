@@ -1,4 +1,3 @@
-
 var progressLine = document.getElementById("progress-line"),
     anchorScroll = function () {
         var e = document.querySelector(".content-wrap"),

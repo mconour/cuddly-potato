@@ -1056,7 +1056,11 @@
         return u
     }, S.extend({
         Deferred: function (t) {
-            var o = [["resolve", "done", S.Callbacks("once memory"), "resolved"], ["reject", "fail", S.Callbacks("once memory"), "rejected"], ["notify", "progress", S.Callbacks("memory")]],
+            var o = [
+                    ["resolve", "done", S.Callbacks("once memory"), "resolved"],
+                    ["reject", "fail", S.Callbacks("once memory"), "rejected"],
+                    ["notify", "progress", S.Callbacks("memory")]
+                ],
                 r = "pending",
                 s = {
                     state: function () {
@@ -1486,12 +1490,12 @@
                 },
                 delegateType: "focusin"
             },
-           blur: {
-               trigger: function () {
-                   return this === lt() && this.blur ? (this.blur(), !1) : void 0
-               },
-               delegateType: "focusout"
-           },
+            blur: {
+                trigger: function () {
+                    return this === lt() && this.blur ? (this.blur(), !1) : void 0
+                },
+                delegateType: "focusout"
+            },
             click: {
                 trigger: function () {
                     return "checkbox" === this.type && this.click && S.nodeName(this, "input") ? (this.click(), !1) : void 0
@@ -4134,7 +4138,9 @@ var global_custom2, _gsScope = "undefined" != typeof module && module.exports &&
                     u = {},
                     c = l[0],
                     h = e.autoRotate || n.vars.orientToBezier;
-                for (i in this._autoRotate = h ? h instanceof Array ? h : [["x", "y", "rotation", !0 === h ? 0 : Number(h) || 0]] : null, c) this._props.push(i);
+                for (i in this._autoRotate = h ? h instanceof Array ? h : [
+                        ["x", "y", "rotation", !0 === h ? 0 : Number(h) || 0]
+                    ] : null, c) this._props.push(i);
                 for (o = this._props.length; - 1 < --o;) i = this._props[o], this._overwriteProps.push(i), r = this._func[i] = "function" == typeof t[i], u[i] = r ? t[i.indexOf("set") || "function" != typeof t["get" + i.substr(3)] ? i : "get" + i.substr(3)]() : parseFloat(t[i]), a || u[i] !== l[0][i] && (a = u);
                 if (this._beziers = "cubic" !== e.type && "quadratic" !== e.type && "soft" !== e.type ? p(l, isNaN(e.curviness) ? 1 : e.curviness, !1, "thruBasic" === e.type, e.correlate, a) : function (t, e, n) {
                         var i, r, o, s, a, l, u, c, h, f, p, d = {},
@@ -4224,7 +4230,11 @@ var global_custom2, _gsScope = "undefined" != typeof module && module.exports &&
                         if (c < 0) return r;
                         for (s = 0; s <= c; s++) l = p(t, u[s], i, r, o, c !== s), h[s] = l.end;
                         for (a in e) f[a] = e[a];
-                        return f.values = h, (r = new m(t, "bezier", 0, 0, l.pt, 2)).data = l, r.plugin = o, r.setRatio = d, 0 === f.autoRotate && (f.autoRotate = !0), !f.autoRotate || f.autoRotate instanceof Array || (s = !0 === f.autoRotate ? 0 : Number(f.autoRotate), f.autoRotate = null != l.end.left ? [["left", "top", "rotation", s, !1]] : null != l.end.x && [["x", "y", "rotation", s, !1]]), f.autoRotate && (i._transform || i._enableTransforms(!1), l.autoRotate = i._target._gsTransform, l.proxy.rotation = l.autoRotate.rotation || 0, i._overwriteProps.push("rotation")), o._onInitTween(l.proxy, f, i._tween), r
+                        return f.values = h, (r = new m(t, "bezier", 0, 0, l.pt, 2)).data = l, r.plugin = o, r.setRatio = d, 0 === f.autoRotate && (f.autoRotate = !0), !f.autoRotate || f.autoRotate instanceof Array || (s = !0 === f.autoRotate ? 0 : Number(f.autoRotate), f.autoRotate = null != l.end.left ? [
+                            ["left", "top", "rotation", s, !1]
+                        ] : null != l.end.x && [
+                            ["x", "y", "rotation", s, !1]
+                        ]), f.autoRotate && (i._transform || i._enableTransforms(!1), l.autoRotate = i._target._gsTransform, l.proxy.rotation = l.autoRotate.rotation || 0, i._overwriteProps.push("rotation")), o._onInitTween(l.proxy, f, i._tween), r
                     }
                 })
             }
@@ -6090,17 +6100,46 @@ var global_custom2, _gsScope = "undefined" != typeof module && module.exports &&
                 }
                 var i = ["Quad", "Cubic", "Quart", "Quint", "Sine", "Expo", "Circ", "Back", "Elastic"],
                     e = {
-                        In: [[.55, .085, .68, .53], [.55, .055, .675, .19], [.895, .03, .685, .22], [.755, .05, .855, .06], [.47, 0, .745, .715], [.95, .05, .795, .035], [.6, .04, .98, .335], [.6, -.28, .735, .045], l],
-                        Out: [[.25, .46, .45, .94], [.215, .61, .355, 1], [.165, .84, .44, 1], [.23, 1, .32, 1], [.39, .575, .565, 1], [.19, 1, .22, 1], [.075, .82, .165, 1], [.175, .885, .32, 1.275], function (e, n) {
-                            return function (t) {
-                                return 1 - l(e, n)(1 - t)
+                        In: [
+                            [.55, .085, .68, .53],
+                            [.55, .055, .675, .19],
+                            [.895, .03, .685, .22],
+                            [.755, .05, .855, .06],
+                            [.47, 0, .745, .715],
+                            [.95, .05, .795, .035],
+                            [.6, .04, .98, .335],
+                            [.6, -.28, .735, .045], l
+                        ],
+                        Out: [
+                            [.25, .46, .45, .94],
+                            [.215, .61, .355, 1],
+                            [.165, .84, .44, 1],
+                            [.23, 1, .32, 1],
+                            [.39, .575, .565, 1],
+                            [.19, 1, .22, 1],
+                            [.075, .82, .165, 1],
+                            [.175, .885, .32, 1.275],
+                            function (e, n) {
+                                return function (t) {
+                                    return 1 - l(e, n)(1 - t)
+                                }
                             }
-                        }],
-                        InOut: [[.455, .03, .515, .955], [.645, .045, .355, 1], [.77, 0, .175, 1], [.86, 0, .07, 1], [.445, .05, .55, .95], [1, 0, 0, 1], [.785, .135, .15, .86], [.68, -.55, .265, 1.55], function (e, n) {
-                            return function (t) {
-                                return t < .5 ? l(e, n)(2 * t) / 2 : 1 - l(e, n)(-2 * t + 2) / 2
+                        ],
+                        InOut: [
+                            [.455, .03, .515, .955],
+                            [.645, .045, .355, 1],
+                            [.77, 0, .175, 1],
+                            [.86, 0, .07, 1],
+                            [.445, .05, .55, .95],
+                            [1, 0, 0, 1],
+                            [.785, .135, .15, .86],
+                            [.68, -.55, .265, 1.55],
+                            function (e, n) {
+                                return function (t) {
+                                    return t < .5 ? l(e, n)(2 * t) / 2 : 1 - l(e, n)(-2 * t + 2) / 2
+                                }
                             }
-                        }]
+                        ]
                     },
                     r = {
                         linear: [.25, .25, .75, .75]
