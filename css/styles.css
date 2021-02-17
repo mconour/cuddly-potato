@@ -2080,7 +2080,7 @@ body.svk a {
     align-items: center
 }
 
-body.svk #loadOverlay {
+body.svk #load-overlay {
     background-color: #fff
 }
 
@@ -2183,7 +2183,7 @@ body.svk #project-slideout {
     opacity: 0
 }
 
-#loadOverlay {
+#load-overlay {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -2194,7 +2194,7 @@ body.svk #project-slideout {
     z-index: 8500
 }
 
-.loading #loadOverlay {
+.loading #load-overlay {
     display: block
 }
 
@@ -3875,7 +3875,7 @@ address .address.in-view a span {
     margin-left: 85%
 }
 
-.grid-wrap {
+.grid-wrapper {
     position: fixed;
     pointer-events: none;
     z-index: 9000;
@@ -6576,7 +6576,7 @@ address .address.in-view a span {
         margin-left: 85%
     }
 
-    .grid-wrap {
+    .grid-wrapper {
         background-color: transparent;
         position: fixed;
         top: 0;
