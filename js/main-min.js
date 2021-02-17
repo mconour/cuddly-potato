@@ -139,9 +139,9 @@ setTimeout(function () {
                 class s {
                     constructor() {
                         this.DOM = {
-                            svg: document.querySelector("svg.distort"),
+                            // svg: document.querySelector("svg.distort"),
                             menu: document.querySelector("nav.menu")
-                        }, this.DOM.imgs = [...this.DOM.svg.querySelectorAll("g > image")], this.DOM.menuLinks = [...this.DOM.menu.querySelectorAll(".menu__link")], this.mousePos = {
+                        }, this.DOM.menuLinks = [...this.DOM.menu.querySelectorAll(".menu-link")], this.mousePos = {
                             x: o.width / 2,
                             y: o.height / 2
                         }, this.lastMousePos = {
@@ -153,9 +153,9 @@ setTimeout(function () {
                                 x: 0,
                                 y: 0
                             }
-                        }, this.dmScale = 0, this.current = -1, this.initEvents(), requestAnimationFrame(() => this.render())
+                        }, this.dmScale = 0, this.current = -1, requestAnimationFrame(() => this.render())
                     }
-                    initEvents() {
+                  /*   initEvents() {
                         window.addEventListener("mousemove", e => this.mousePos = n(e)), this.DOM.menuLinks.forEach((e, t) => {
                             e.addEventListener("mouseenter", () => {
                                 -1 !== this.current && TweenMax.set(this.DOM.imgs[this.current], {
@@ -172,11 +172,11 @@ setTimeout(function () {
                             ease: Quad.easeOut,
                             opacity: 0
                         }))
-                    }
+                    } */
                     render() {
-                        this.lastMousePos.translation.x = e(this.lastMousePos.translation.x, this.mousePos.x, .1), this.lastMousePos.translation.y = e(this.lastMousePos.translation.y, this.mousePos.y, .1), this.DOM.svg.style.transform = `translateX(${this.lastMousePos.translation.x-o.width/2}px) translateY(${this.lastMousePos.translation.y-o.height/1.8}px)`, this.lastMousePos.displacement.x = e(this.lastMousePos.displacement.x, this.mousePos.x, .1), this.lastMousePos.displacement.y = e(this.lastMousePos.displacement.y, this.mousePos.y, .1);
+                        this.lastMousePos.translation.x = e(this.lastMousePos.translation.x, this.mousePos.x, .1), this.lastMousePos.translation.y = e(this.lastMousePos.translation.y, this.mousePos.y, .1), this.lastMousePos.displacement.x = e(this.lastMousePos.displacement.x, this.mousePos.x, .1), this.lastMousePos.displacement.y = e(this.lastMousePos.displacement.y, this.mousePos.y, .1);
                         const n = t(this.lastMousePos.displacement.x, this.mousePos.x, this.lastMousePos.displacement.y, this.mousePos.y);
-                        this.dmScale = Math.min(n, 200), a.scale.baseVal = this.dmScale, requestAnimationFrame(() => this.render())
+                        this.dmScale = Math.min(n, 200), requestAnimationFrame(() => this.render())
                     }
                 }
                 new s
@@ -285,8 +285,8 @@ setTimeout(function () {
                 loop: !1
             })
         }, 400), $(window).width() > 1024 && $(function () {
-            $(".project-wrap ul a").hover(function () {
-                $("i").removeClass("active"), $(".project-wrap ul a").removeClass("active");
+            $(".project-wrapper ul a").hover(function () {
+                $("i").removeClass("active"), $(".project-wrapper ul a").removeClass("active");
                 $(this).addClass("active");
                 $(".project-img img").removeClass("show"), $("." + $(this).data("project-name")).addClass("show"), $(this).next("i").addClass("active")
             }, function () {})

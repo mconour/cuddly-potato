@@ -3165,7 +3165,7 @@ address .address.in-view a span {
     overflow: hidden
 }
 
-#work .project-wrap {
+#work .project-wrapper {
     position: relative
 }
 
@@ -3237,19 +3237,19 @@ address .address.in-view a span {
     transition-delay: 0.2s
 }
 
-#services h3 {
+#experience h3 {
     font-size: 1px;
     text-transform: uppercase
 }
 
-#services h3 span {
+#experience h3 span {
     font-size: 17vw;
     display: inline-block;
     line-height: .8em
 }
 
-#services h3.first span:nth-of-type(2) span,
-#services h3.first span:nth-of-type(2) span:after {
+#experience h3.first span:nth-of-type(2) span,
+#experience h3.first span:nth-of-type(2) span:after {
     -webkit-transition-delay: 0.1s;
     -moz-transition-delay: 0.1s;
     -o-transition-delay: 0.1s;
@@ -3257,8 +3257,8 @@ address .address.in-view a span {
     transition-delay: 0.1s
 }
 
-#services h3.second span:nth-of-type(2) span,
-#services h3.second span:nth-of-type(2) span:after {
+#experience h3.second span:nth-of-type(2) span,
+#experience h3.second span:nth-of-type(2) span:after {
     -webkit-transition-delay: 0.1s;
     -moz-transition-delay: 0.1s;
     -o-transition-delay: 0.1s;
@@ -3266,8 +3266,8 @@ address .address.in-view a span {
     transition-delay: 0.1s
 }
 
-#services h3.second span:nth-of-type(3) span,
-#services h3.second span:nth-of-type(3) span:after {
+#experience h3.second span:nth-of-type(3) span,
+#experience h3.second span:nth-of-type(3) span:after {
     -webkit-transition-delay: 0.2s;
     -moz-transition-delay: 0.2s;
     -o-transition-delay: 0.2s;
@@ -3275,8 +3275,8 @@ address .address.in-view a span {
     transition-delay: 0.2s
 }
 
-#services h3.second span:nth-of-type(4) span,
-#services h3.second span:nth-of-type(4) span:after {
+#experience h3.second span:nth-of-type(4) span,
+#experience h3.second span:nth-of-type(4) span:after {
     -webkit-transition-delay: 0.3s;
     -moz-transition-delay: 0.3s;
     -o-transition-delay: 0.3s;
@@ -3284,8 +3284,8 @@ address .address.in-view a span {
     transition-delay: 0.3s
 }
 
-#services h3.third span:nth-of-type(2) span,
-#services h3.third span:nth-of-type(2) span:after {
+#experience h3.third span:nth-of-type(2) span,
+#experience h3.third span:nth-of-type(2) span:after {
     -webkit-transition-delay: 0.1s;
     -moz-transition-delay: 0.1s;
     -o-transition-delay: 0.1s;
@@ -3293,8 +3293,8 @@ address .address.in-view a span {
     transition-delay: 0.1s
 }
 
-#services h3.third span:nth-of-type(3) span,
-#services h3.third span:nth-of-type(3) span:after {
+#experience h3.third span:nth-of-type(3) span,
+#experience h3.third span:nth-of-type(3) span:after {
     -webkit-transition-delay: 0.2s;
     -moz-transition-delay: 0.2s;
     -o-transition-delay: 0.2s;
@@ -3302,8 +3302,8 @@ address .address.in-view a span {
     transition-delay: 0.2s
 }
 
-#services h3.third span:nth-of-type(4) span,
-#services h3.third span:nth-of-type(4) span:after {
+#experience h3.third span:nth-of-type(4) span,
+#experience h3.third span:nth-of-type(4) span:after {
     -webkit-transition-delay: 0.3s;
     -moz-transition-delay: 0.3s;
     -o-transition-delay: 0.3s;
@@ -3311,8 +3311,8 @@ address .address.in-view a span {
     transition-delay: 0.3s
 }
 
-#services h3.fourth span:nth-of-type(2) span,
-#services h3.fourth span:nth-of-type(2) span:after {
+#experience h3.fourth span:nth-of-type(2) span,
+#experience h3.fourth span:nth-of-type(2) span:after {
     -webkit-transition-delay: 0.1s;
     -moz-transition-delay: 0.1s;
     -o-transition-delay: 0.1s;
@@ -3320,8 +3320,8 @@ address .address.in-view a span {
     transition-delay: 0.1s
 }
 
-#services h3.fourth span:nth-of-type(3) span,
-#services h3.fourth span:nth-of-type(3) span:after {
+#experience h3.fourth span:nth-of-type(3) span,
+#experience h3.fourth span:nth-of-type(3) span:after {
     -webkit-transition-delay: 0.2s;
     -moz-transition-delay: 0.2s;
     -o-transition-delay: 0.2s;
@@ -3329,8 +3329,8 @@ address .address.in-view a span {
     transition-delay: 0.2s
 }
 
-#services h3.fourth span:nth-of-type(4) span,
-#services h3.fourth span:nth-of-type(4) span:after {
+#experience h3.fourth span:nth-of-type(4) span,
+#experience h3.fourth span:nth-of-type(4) span:after {
     -webkit-transition-delay: 0.3s;
     -moz-transition-delay: 0.3s;
     -o-transition-delay: 0.3s;
@@ -3338,21 +3338,21 @@ address .address.in-view a span {
     transition-delay: 0.3s
 }
 
-#services .serv-description {
+#experience .serv-description {
     padding-left: 50%
 }
 
-#services .serv-description p {
+#experience .serv-description p {
     font-size: 1.5vw;
     line-height: 1.2em
 }
 
-#services .service-wrap {
+#experience .service-wrap {
     position: relative;
     margin: 30vh 0
 }
 
-#services .counter-wrap {
+#experience .counter-wrap {
     width: 15%;
     height: 22vw;
     position: absolute;
@@ -3361,13 +3361,13 @@ address .address.in-view a span {
     overflow: hidden
 }
 
-#services .counter-wrap .counter {
+#experience .counter-wrap .counter {
     position: relative;
     height: 100%;
     text-align: center
 }
 
-#services .counter-wrap ul {
+#experience .counter-wrap ul {
     margin-top: -2vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3384,21 +3384,21 @@ address .address.in-view a span {
     word-break: normal
 }
 
-#services .counter-wrap ul li {
+#experience .counter-wrap ul li {
     width: 100%;
     font-size: 20vw;
     line-height: 20vw;
     font-weight: 800
 }
 
-#services .counter-wrap span {
+#experience .counter-wrap span {
     position: absolute;
     display: block;
     width: 100%;
     bottom: 0
 }
 
-#services .counter-wrap.in-view ul {
+#experience .counter-wrap.in-view ul {
     transform: translateX(-87.5%);
     -moz-transform: translateX(-87.5%);
     -webkit-transform: translateX(-87.5%);
@@ -5780,7 +5780,8 @@ address .address.in-view a span {
     position: absolute;
     top: 50%;
     left: 38%;
-    font-size: 5.6vw;
+    /* font-size: 5.6vw; */
+    font-size: 5.3vw;
     font-weight: normal
 }
 
@@ -6185,7 +6186,7 @@ address .address.in-view a span {
     }
 
     #contact h3.title span,
-    #services h3 span,
+    #experience h3 span,
     #work h3 span {
         font-size: 24vw !important
     }
@@ -6221,28 +6222,28 @@ address .address.in-view a span {
         display: none
     }
 
-    /* #work .project-wrap .no-list li {
+    /* #work .project-wrapper .no-list li {
         line-height: 6em;
         font-weight: 800;
         overflow: visible
     } */
 
-    #work .project-wrap .no-list li {
+    #work .project-wrapper .no-list li {
         line-height: 3em;
         font-weight: 800;
         overflow: visible
     }
 
-    #work .project-wrap .no-list li a {
+    #work .project-wrapper .no-list li a {
         opacity: 0
     }
 
-    #work .project-wrap .no-list li a:before,
-    #work .project-wrap .no-list li i {
+    #work .project-wrapper .no-list li a:before,
+    #work .project-wrapper .no-list li i {
         display: none
     }
 
-    #work .project-wrap .no-list li:after {
+    #work .project-wrapper .no-list li:after {
         z-index: -1;
         opacity: .7;
         content: "";
@@ -6344,7 +6345,8 @@ address .address.in-view a span {
 
     #project-slideout .menu {
         left: calc(10px + 25%);
-        font-size: 7vw;        
+        /* font-size: 7vw; */
+        font-size: 6.8vw;  
     }
 
     #project-slideout .menu a {
@@ -6383,21 +6385,21 @@ address .address.in-view a span {
         display: none
     }
 
-    #services .serv-description {
+    #experience .serv-description {
         padding-left: 18%;
         margin-top: 0
     }
 
-    #services .serv-description p {
+    #experience .serv-description p {
         font-size: 5vw;
         line-height: 1.35em
     }
 
-    #services .service-wrap {
+    #experience .service-wrap {
         margin: 15vh 0
     }
 
-    #services .counter-wrap {
+    #experience .counter-wrap {
         margin-left: 25%;
         border-left: 2px solid #fff;
         margin-bottom: 15vh;
@@ -6407,13 +6409,13 @@ address .address.in-view a span {
         overflow: hidden
     }
 
-    #services .counter-wrap .counter {
+    #experience .counter-wrap .counter {
         position: relative;
         height: 100%;
         text-align: center
     }
 
-    #services .counter-wrap ul {
+    #experience .counter-wrap ul {
         margin-top: -1.5vw;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -6435,21 +6437,21 @@ address .address.in-view a span {
         word-break: normal
     }
 
-    #services .counter-wrap ul li {
+    #experience .counter-wrap ul li {
         width: 100%;
         font-size: 45vw;
         line-height: 45vw;
         font-weight: 800
     }
 
-    #services .counter-wrap span {
+    #experience .counter-wrap span {
         position: absolute;
         display: block;
         width: 100%;
         bottom: 0
     }
 
-    #services .counter-wrap.scroll-now ul {
+    #experience .counter-wrap.scroll-now ul {
         transform: translateX(-87.5%) !important;
         -moz-transform: translateX(-87.5%) !important;
         -webkit-transform: translateX(-87.5%) !important;
