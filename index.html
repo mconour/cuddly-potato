@@ -2,460 +2,304 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael Conour &mdash; Copywriter & Content Strategist</title>
 
-    <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="img/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#5bbad5">
-    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    <meta charset="utf-8">
+    <title>Michael Conour – Content Strategist & Copywriter</title>
+    <meta name="description" content="Michael Conour is a Portland-based copywriter and content marketing strategist, focused on digital brand experiences. His passion is solving problems through unique ideas that translate into compelling content solutions. He's led creative teams from agencies to big brands and is always looking to evolve the world of digital storytelling.">
+    <meta name="author" content="Michael Conour">
 
-    <!-- Fonts –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,800,900&amp;display=swap" rel="stylesheet">
+    <!-- Mobile Specific Metas –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONTS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <!-- Vendor Prefixes –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type="text-javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js">
+    </script>
+
 </head>
 
-<body class="loading">
-    <div id="load-overlay"></div>
-    <div class="grid-wrapper">
-        <div class="grid">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div class="grid-overlay">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+<body class="invisible" id="top">
+
+    <a href="#top" class="logo">
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 67.13 67.09">
+            <title>Michael Conour</title>
+            <polyline id="outline-left" points="33.56 66.97 9.93 57.19 0.14 33.55 9.93 9.9 33.56 0.12"
+                style="fill: none;stroke: #999;stroke-miterlimit: 10;stroke-width: 0.25px" />
+            <polyline id="outline-right" points="33.56 0.12 57.2 9.9 67 33.55 57.2 57.19 33.56 66.97"
+                style="fill: none;stroke: #999;stroke-miterlimit: 10;stroke-width: 0.25px" />
+            <path id="letter"
+                d="M251,253.64h1.19l3.09,7.13,3.1-7.13h1.13v8.5h-.8v-7.49h0l-3.24,7.49h-.35l-3.29-7.49h0v7.49H251Z"
+                transform="translate(-221.77 -224.47)"
+                style="fill: #999;stroke: #999;stroke-miterlimit: 10;stroke-width: 0.25px" />
+        </svg>
+    </a>
+
+    <a href="#intro" class="link about-link link--active lg-show"><span>About</span></a>
+    <a href="https://resume.io/r/D0vXUP01n" target="_blank" class="link resume-link lg-show"><span>Resume</span></a>
+
+
+    <div class="ham">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
 
+    <div class="ham-menu hide">
+        <ul>
+            <li><a href="#intro" class="link about-link link--active">About</a></li>
+            <li><a href="https://resume.io/r/D0vXUP01n" target="_blank" class="link about-link link--active">Resume</a>
+            </li>
 
-    <!-- progress bar -->
-    <div class="progress-bar">
-        <div id="progress-line"></div>
-    </div>
-
-    <div id="main">
-
-        <!-- Project Overlay  -->
-        <div id="project-menu" class="pushed">
-            <div class="project-button">
-                <div class="pm-label">
-                    <span>All projects</span>
-                    <span>Close</span>
-                </div>
-                <span class="pm-icon">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </span>
-            </div>
-        </div>
-
-
-        <div id="project-slideout">
-            <nav class="menu">
-                <a href="choice-privileges.html" class="menu-link" data-pc="pc-first">Choice Privileges</a><br>
-                <a href="cambria-hotels.html" class="menu-link" data-pc="pc-second">Cambria Hotels</a><br>
-                <a href="choice-destinations.html" class="menu-link" data-pc="pc-third">Choice Destinations</a><br>
-                <a href="choice-mobile.html" class="menu-link" data-pc="pc-fourth">Choice Mobile</a><br>
-                <a href="miscellaneous.html" class="menu-link" data-pc="pc-fifth">Miscellaneous</a>
-            </nav>
-
-            <div class="p-service-list pc-first">
-                <div class="contributions-placeholder">
-                    <span>Contributions</span>
-                </div>
-                <ul class="pc-first">
-                    <li><span>Creative Direction</span></li>
-                    <li><span>Content Development</span></li>
-                    <li><span>Messaging</span></li>
-                </ul>
-                <ul class="pc-second">
-                    <li><span>Content Development</span></li>
-                    <li><span>Creative Direction</span></li>
-                </ul>
-                <ul class="pc-third">
-                    <li><span>Strategy</span></li>
-                    <li><span>Messaging</span></li>
-                    <li><span>Content Development</span></li>
-                </ul>
-                <ul class="pc-fourth">
-                    <li><span>Creative Direction</span></li>
-                    <li><span>Content Development</span></li>
-                </ul>
-                <ul class="pc-fifth">
-                    <li><span>Strategy</span></li>
-                    <li><span>Creative Direction</span></li>
-                    <li><span>Content Development</span></li>
-                    <li><span>Messaging</span></li>
-                </ul>
-            </div>
-
-            <div class="proj-counter-wrapper">
-                <div class="project-count">
-                    <span class="placeholder">05</span>
-                    <span class="pc-first">01</span>
-                    <span class="pc-second">02</span>
-                    <span class="pc-third">03</span>
-                    <span class="pc-fourth">04</span>
-                    <span class="pc-fifth">05</span>
-                </div>
-            </div>
-        </div>
-        <div id="logo">
-            <a href="index.html">
-                <div class="logo-info">
-                    <div>
-                        <span><i class="from-top">M</i></span>
-                        <span><i class="from-bottom">i</i></span>
-                        <span><i class="from-left">c</i></span>
-                        <span><i class="from-top">h</i></span>
-                        <span><i class="from-left">a</i></span>
-                        <span><i class="from-bottom">e</i></span>
-                        <span><i class="from-top">l</i></span>
-                        &nbsp;
-                        <span><i class="from-top">C</i></span>
-                        <span><i class="from-right">o</i></span>
-                        <span><i class="from-left">n</i></span>
-                        <span><i class="from-bottom">o</i></span>
-                        <span><i class="from-top">u</i></span>
-                        <span><i class="from-top">r</i></span>
-                    </div>
-
-                    <div>
-                        <span><i class="from-top">C</i></span>
-                        <span><i class="from-left">o</i></span>
-                        <span><i class="from-bottom">p</i></span>
-                        <span><i class="from-top">y</i></span>
-                        <span><i class="from-right">w</i></span>
-                        <span><i class="from-bottom">r</i></span>
-                        <span><i class="from-top">i</i></span>
-                        <span><i class="from-left">t</i></span>
-                        <span><i class="from-right">e</i></span>
-                        <span><i class="from-bottom">r</i></span>
-                        <span><i class="from-top">&</i></span>
-                        <br>
-                        <span><i class="from-top">S</i></span>
-                        <span><i class="from-left">t</i></span>
-                        <span><i class="from-bottom">r</i></span>
-                        <span><i class="from-top">a</i></span>
-                        <span><i class="from-right">t</i></span>
-                        <span><i class="from-bottom">e</i></span>
-                        <span><i class="from-top">g</i></span>
-                        <span><i class="from-left">i</i></span>
-                        <span><i class="from-right">s</i></span>
-                        <span><i class="from-bottom">t</i></span>
-
-
-                    </div>
-                    <div>
-                        <span><i class="from-bottom">m</i></span>
-                        <span><i class="from-left">i</i></span>
-                        <span><i class="from-top">c</i></span>
-                        <span><i class="from-bottom">h</i></span>
-                        <span><i class="from-right">a</i></span>
-                        <span><i class="from-left">e</i></span>
-                        <span><i class="from-bottom">l</i></span>
-                        <span><i class="from-top">c</i></span>
-                        <span><i class="from-left">o</i></span>
-                        <span><i class="from-bottom">n</i></span>
-                        <span><i class="from-right">o</i></span>
-                        <span><i class="from-top">u</i></span>
-                        <span><i class="from-bottom">r</i></span>
-                        <span><i class="from-left">@</i></span>
-                        <span><i class="from-top">g</i></span>
-                        <span><i class="from-left">m</i></span>
-                        <span><i class="from-bottom">a</i></span>
-                        <span><i class="from-right">i</i></span>
-                        <span><i class="from-left">l</i></span>
-                        <span><i class="from-top">.</i></span>
-                        <span><i class="from-right">c</i></span>
-                        <span><i class="from-bottom">o</i></span>
-                        <span><i class="from-top">m</i></span>
-                    </div>
-
-
-                </div>
-            </a>
-        </div>
-        <ul id="nav-links">
-            <li class="anchor"><a class="about" href="#about">About</a></li>
-            <li class="anchor"><a class="work" href="#work">Work</a></li>
-            <li class="anchor"><a class="experience" href="#experience">Experience</a></li>
-            <li class="anchor"><a class="contact" href="#contact">Contact</a></li>
         </ul>
-        <div class="content-wrap" id="wrapper">
-            <div class="scene-element ajax-fadein">
-                <section class="page-section" id="about">
-                    <div class="mc-l-small mc-os-1 float">
-                        <div class="chapter-no text">
-                            <span class="text-left text-left-rev"><span>01</span></span>
-                        </div>
-                    </div>
-                    <div class="mc mc-r-big mc-os-2">
-                        <h1 class="text section-title">
-                            <span class="text-left text-left-rev"><span data-stick-cursor>About</span></span>
-                        </h1>
-                    </div>
-                    <div class="mc mc-r-big mc-os-2">
-                        <p>Hello! I’m <br>Michael Conour, a Portland-based copywriter and content marketing strategist
-                            focused on digital brand experiences. My passion is solving problems through unique ideas
-                            that translate into compelling content solutions. I've led creative teams from agencies to
-                            big brands and always looking to evolve the world of digital storytelling.
-                        </p>
-                    </div>
-                </section>
-                <div class="ot"></div>
-                <section class="page-section" id="work">
-                    <div class="mc-l-small mc-os-1 float">
-                        <div class="chapter-no text">
-                            <span class="text-left text-left-rev"><span>02</span></span>
-                        </div>
-                    </div>
-                    <div class="mc mc-r-big mc-os-2">
-                        <h1 class="text section-title">
-                            <span class="text-left text-left-rev"><span>Selected Work</span></span>
-                        </h1>
-                    </div>
 
-                    <div class="mc mc-r-big mc-os-2">
-                        <h3 class="first text view">
-                            <span class="text-left"><span>p</span></span>
-                            <span class="text-left"><span>o</span></span>
-                            <span class="text-left"><span>r</span></span>
-                        </h3>
-                    </div>
-                    <div class="mc mc-r-xl mc-os-1">
-                        <h3 class="second text view">
-                            <span class="text-left"><span>t</span></span>
-                            <span class="text-left"><span>f</span></span>
-                            <span class="text-left"><span>o</span></span>
-                            <span class="text-left mdash"><span></span></span>
-                        </h3>
-                    </div>
-                    <div class="mc mc-r-big mc-os-2">
-                        <h3 class="third text view">
-                            <span class="text-left mdash"><span></span></span>
-                            <span class="text-left"><span>l</span></span>
-                            <span class="text-left"><span>i</span></span>
-                            <span class="text-left"><span>o</span></span>
-
-                        </h3>
-                    </div>
-
-                    <div class="project-wrapper">
-
-                        <div class="mc mc-r-big mc-os-2">
-                            <ul class="no-list view">
-                                <li><a class="active" href="choice-privileges.html">Choice Privileges</a></li>
-                                <li><a href="cambria-hotels.html">Cambria Hotels</a></li>
-                                <li><a href="choice-destinations.html">Choice Destinations</a></li>
-                                <li><a href="choice-mobile.html">Choice Mobile</a></li>
-                                <li><a href="miscellaneous.html">Miscellaneous</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </section>
-
-                <section id="highlight">
-                    <div class="mc mc-r-xl mc-os-1">
-                        <h3 class="text mid-section">
-                            <span class="text-bottom text-bottom-rev"><span>I do &mdash;&mdash;</span></span>
-                            <span class="text-bottom text-bottom-rev"><span>strategy &amp;</span></span>
-                            <span class="text-bottom text-bottom-rev creative"><span>creative</span></span>
-                        </h3>
-                    </div>
-                    <address class="mc mc-r-big mc-os-2">
-                        <div class="icon text">
-                            <img src="img/svg/arrow.svg" alt="address arrow">
-                        </div>
-                        <div class="address">
-                            <h2 class="text-block">
-                                <span>Like what you see? Hire me.</span>
-                            </h2>
-                            <div class="ea email-address-1">
-                                <a href='mailto:michaelconour@gmail.com'><span>View Resume</span></a>
-
-                            </div>
-
-                            <noscript>Sorry, you need Javascript on to email me.</noscript>
-                        </div>
-                    </address>
-                </section>
-
-                <section class="page-section ot" id="experience">
-                    <div class="mc-l-small mc-os-1 float">
-                        <div class="chapter-no text">
-                            <span class="text-left text-left-rev"><span>03</span></span>
-                        </div>
-                    </div>
-                    <div class="mc mc-r-big mc-os-2">
-                        <h1 class="text section-title">
-                            <span class="text-left text-left-rev"><span>Services</span></span>
-                        </h1>
-                    </div>
-                    <div class="mc mc-r-big mc-os-2">
-                        <h3 class="second text">
-                            <span class="text-left"><span>e</span></span>
-                            <span class="text-left"><span>x</span></span>
-                            <span class="text-left"><span>p</span></span>
-                        </h3>
-                    </div>
-                    <div class="mc mc-r-xl mc-os-1">
-                        <h3 class="third text">
-                            <span class="text-left"><span>e</span></span>
-                            <span class="text-left"><span>r</span></span>
-                            <span class="text-left"><span>t</span></span>
-                            <span class="text-left mdash"><span></span></span>
-                        </h3>
-                    </div>
-                    <div class="mc mc-r-big mc-os-2">
-                        <h3 class="fourth text">
-                            <span class="text-left mdash"><span></span></span>
-                            <span class="text-left"><span>i</span></span>
-                            <span class="text-left"><span>s</span></span>
-                            <span class="text-left"><span>e</span></span>
-                        </h3>
-                    </div>
-                    <div class="service-wrap">
-                        <div class="counter-wrap view">
-                            <div class="counter">
-                                <ul class="creative">
-                                    <li>1</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
-                                    <li>5</li>
-                                    <li>6</li>
-                                    <li>7</li>
-                                    <li>8</li>
-                                </ul>
-                                <span>years</span>
-                            </div>
-                        </div>
-                        <div class="mc mc-r-xl mc-os-1">
-                            <div class="serv-description">
-                                <p>Creative direction, strategy, copywriting, and iterating are my specialties, and I've
-                                    had nearly a decade honing my skills. In all my projects, I find efficient
-                                    workflows, excellent communication, and a sprinkling of self-discipline are key
-                                    &mdash; a strong work ethic has driven my success in a myriad of specialties.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mc mc-r-big mc-os-2">
-                        <ul class="no-list view">
-                            <li><span>Content Strategy</span></li>
-                            <li><span>Search Optimization</span></li>
-                            <li><span>Creative Direction</span></li>
-                            <li><span>Web Design</span></li>
-                            <li><span>Data Analysis</span></li>
-                            <li><span>Writing & Editing</span></li>
-                            <li><span>Copywriting</span></li>
-                        </ul>
-                    </div>
-
-                </section>
-
-
-
-                <section class="page-section ot" id="contact">
-                    <div class="mc-l-small mc-os-1 float">
-                        <div class="chapter-no text">
-                            <span class="text-left text-left-rev"><span>04</span></span>
-                        </div>
-                    </div>
-                    <div class="mc mc-r-big mc-os-2">
-                        <h1 class="text section-title">
-                            <span class="text-left text-left-rev"><span>Contact</span></span>
-                        </h1>
-                    </div>
-                    <div class="mc mc-r-big mc-os-2">
-                        <h3 class="first text title">
-                            <span class="text-left"><span>g</span></span>
-                            <span class="text-left"><span>e</span></span>
-                            <span class="text-left"><span>t</span></span>
-                        </h3>
-                    </div>
-                    <div class="mc mc-r-big mc-os-2">
-                        <h3 class="second text title">
-                            <span class="text-left"><span>i</span></span>
-                            <span class="text-left"><span>n</span></span>
-                        </h3>
-                    </div>
-                    <div class="mc mc-r-xl mc-os-1">
-                        <h3 class="third text title">
-                            <span class="text-left"><span>t</span></span>
-                            <span class="text-left"><span>o</span></span>
-                            <span class="text-left"><span>u</span></span>
-                            <span class="text-left mdash"><span></span></span>
-                        </h3>
-                    </div>
-                    <div class="mc mc-r-big mc-os-2">
-                        <h3 class="fourth text title">
-                            <span class="text-left mdash"><span></span></span>
-                            <span class="text-left"><span>c</span></span>
-                            <span class="text-left"><span>h</span></span>
-                        </h3>
-                    </div>
-                    <address class="mc mc-r-big mc-os-2">
-                        <div class="icon text">
-                            <img src="img/svg/arrow.svg" alt="address arrow">
-                        </div>
-                        <div class="address view">
-                            <h2 class="text-block view">
-                                <span>Like what you see? Hire me.</span>
-                            </h2>
-                            <div class="ea email-address-2"></div>
-                            <noscript>Sorry, you need Javascript on to email me.</noscript>
-
-                        </div>
-                    </address>
-                    <footer class="homepage-footer">
-
-                        <div class="o-bth-small">
-                            <div class="mc mc-l-small mc-os-1 business-info">
-                                Michael Conour<br>
-                                Portland, Oregon<br>
-                                <a href="https://resume.io/r/D0vXUP01n" target="_blank">Resume</a><br>
-                                <a href="https://www.linkedin.com/in/michaelconour" target="_blank">LinkedIn</a><br>
-                            </div>
-                        </div>
-
-                        <div class="mc mc-r-big mc-os-2 copy">
-                            <h2 class="text change">
-                                <span class="text-left text-left-rev"><span>Michael Conour &copy; 2021</span></span>
-                            </h2>
-                        </div>
-                    </footer>
-                </section>
-            </div>
+        <div class="close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 5.93 5.93">
+                <title>icon-close</title>
+                <polygon
+                    points="5.93 0.47 5.47 0 2.97 2.5 0.47 0 0 0.47 2.5 2.97 0 5.47 0.47 5.93 2.97 3.44 5.47 5.93 5.93 5.47 3.44 2.97 5.93 0.47"
+                    fill="#fff" fill-rule="evenodd" />
+            </svg>
         </div>
     </div>
 
-    <!-- SCRIPTS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="js/scripts.js"></script>
-    <script src="js/main-min.js"></script>
+    <div id="intro" class="scroll-triggered st-group invisible" data-st-animation="none" data-st-gutter="0">
+
+        <div class="layer z2 text-wrapper">
+            <div class="text valign">
+                <h1>Michael Conour<br />&mdash; Copywriter & Strategist</h1>
+            </div>
+        </div>
+        <div class="background layer"></div>
+
+    </div>
+    <div class="intro-spacer"></div>
+
+    <div id="bio" class="scroll-triggered st-group invisible" data-st-animation="none" data-st-gutter="1">
+
+        <div class="text">
+            <div class="container">
+                <h2>Michael Conour is a Portland-based copywriter and content marketing strategist focused on digital
+                    brand experiences. His passion is solving problems through unique ideas that translate into
+                    compelling content solutions. He's led creative teams from agencies to big brands and is always
+                    looking to evolve the world of digital storytelling.
+                </h2>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="skills" class="scroll-triggered st-group invisible" data-st-animation="none" data-st-gutter="0">
+
+        <div class="container relative">
+            <h1 id="title-skills" class="title scroll-triggered st-group invisible"><span>Skills</span></h1>
+            <ul>
+                <li class="col-push-2 scroll-triggered st-group invisible">
+                    <div>
+                        Content <span>Writing</span>
+                        <em></em>
+                    </div>
+                </li>
+                <li class="col-push-6 lg-col-push-8 scroll-triggered st-group invisible">
+                    <div>
+                        Content<span>Strategy</span>
+                        <em></em>
+                    </div>
+                </li>
+                <li class="col-push-4 lg-col-push-5 scroll-triggered st-group invisible">
+                    <div>
+                        Search<span>Optimization</span>
+                        <em></em>
+                    </div>
+                </li>
+                <li class="col-push-1 scroll-triggered st-group invisible">
+                    <div>
+                        Copywriting<span> & Editing</span>
+                        <em></em>
+                    </div>
+                </li>
+                <li class="col-push-6 scroll-triggered st-group invisible">
+                    <div>
+                        Creative<span>Direction</span>
+                        <em></em>
+                    </div>
+                </li>
+                <li class="col-push-3 scroll-triggered st-group invisible">
+                    <div>
+                        Graphic <span>Design</span>
+                        <em></em>
+                    </div>
+                </li>
+
+                <li class="col-push-6 lg-col-push-8 scroll-triggered st-group invisible">
+                    <div>
+                        Data <span>Analysis</span>
+                        <em></em>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <ul id="project-list" class="hidden">
+
+        <li><a href="#choice-privileges">Choice Privileges <span style="background-color:#ffffff;"></span></a></li>
+        <li><a href="#cambria-hotels">Cambria Hotels <span style="background-color:#ffffff;"></span></a></li>
+        <li><a href="#choice-destinations">Choice Destinations <span style="background-color:#ffffff;"></span></a></li>
+        <li><a href="#choice-mobile">Choice Mobile <span style="background-color:#ffffff;"></span></a></li>
+        <li><a href="#more">Miscellaneous <span style="background-color:#ffffff;"></span></a></li>
+    </ul>
+
+    <h1 id="project-title" class="title invisible"><span>Work</span></h1>
+
+    <div id="work" class="scroll-triggered st-group invisible" data-st-animation="none" data-st-gutter="0"
+        data-st-reset>
+
+        <span class="list-show scroll-triggered invisible" data-st-reset></span>
+
+        <div class="projects clearfix">
+
+            <div id="choice-privileges" class="project project-privileges scroll-triggered invisible"
+                data-st-animation="none">
+                <div class="left scroll-triggered st-group invisible" data-st-animation="big-up">
+                    <img src="assets/project/choice-privileges/choice-privileges-01.jpg" alt="Apple Music" />
+                </div>
+                <div class="right scroll-triggered st-group invisible" data-st-animation="big-up">
+                    <img src="assets/project/choice-privileges/choice-privileges-02.jpg" alt="Apple Music" />
+                </div>
+            </div>
+
+            <div id="cambria-hotels" class="project project-cambria scroll-triggered invisible"
+                data-st-animation="none">
+                <div class="left scroll-triggered st-group invisible" data-st-animation="big-up">
+                    <img src="assets/project/cambria/cambria-01.jpg" alt="Apple Watch" />
+                </div>
+                <div class="right scroll-triggered st-group invisible" data-st-animation="big-up">
+                    <img src="assets/project/cambria/cambria-02.jpg" alt="Apple Watch" />
+                </div>
+            </div>
+
+            <div id="choice-destinations" class="project project-destinations scroll-triggered invisible"
+                data-st-animation="none">
+                <div class="right scroll-triggered st-group invisible" data-st-animation="big-up">
+                    <img src="assets/project/choice-destinations/choice-destinations-01.jpg" alt="Facebook" />
+                </div>
+
+                <div class="left scroll-triggered st-group invisible" data-st-animation="big-up">
+                    <img src="assets/project/choice-destinations/choice-destinations-02.jpg" alt="Facebook" />
+                </div>
+            </div>
+
+            <div id="choice-mobile" class="project project-mobile scroll-triggered invisible" data-st-animation="none">
+                <div class="left scroll-triggered st-group invisible" data-st-animation="big-up">
+                    <img src="assets/project/choice-mobile/choice-mobile-01.jpg" alt="choice-mobile" />
+                </div>
+            </div>
+
+
+
+            <div id="more" class="project project-more scroll-triggered invisible" data-st-animation="none">
+                <div data-target="more" class="project project-bluegreen-promo scroll-triggered invisible"
+                    data-st-animation="none">
+                    <div class="image scroll-triggered st-group invisible" data-st-animation="big-up">
+                        <img src="assets/project/more/extras-01.jpg" alt="Nike" />
+                    </div>
+                    <div class="image scroll-triggered st-group invisible" data-st-animation="big-up">
+                        <img src="assets/project/more/extras-02.jpg" alt="Nike" />
+                    </div>
+                </div>
+
+                <div data-target="more" class="project project-privilege-promo scroll-triggered invisible"
+                    data-st-animation="none">
+                    <div class="left scroll-triggered st-group invisible" data-st-animation="big-up">
+                        <img src="assets/project/more/extras-03.jpg" alt="CBS Films" />
+                    </div>
+                    <div class="right scroll-triggered st-group invisible" data-st-animation="big-up">
+                        <img src="assets/project/more/extras-04.jpg" alt="CBS Films" />
+                    </div>
+                </div>
+
+                <div data-target="more" class="project project-meeting-promo scroll-triggered invisible"
+                    data-st-animation="none">
+                    <div class="left scroll-triggered st-group invisible" data-st-animation="big-up">
+                        <img src="assets/project/more/extras-05.jpg" alt="Raptor Group" />
+                    </div>
+                    <div class="right scroll-triggered st-group invisible" data-st-animation="big-up">
+                        <img src="assets/project/more/extras-06.jpg" alt="Raptor Group" />
+                    </div>
+                </div>
+
+                <div data-target="more" class="project project-points-promo scroll-triggered invisible"
+                    data-st-animation="none">
+                    <div class="image scroll-triggered st-group invisible" data-st-animation="big-up">
+                        <img src="assets/project/more/extras-07.jpg" alt="Southern Comfort" />
+                    </div>
+
+                    <div class="image scroll-triggered st-group invisible" data-st-animation="big-up">
+                        <img src="assets/project/more/extras-08.jpg" alt="Southern Comfort" />
+                    </div>
+                </div>
+
+                <div data-target="more" class="project project-bluegreen-ascend scroll-triggered invisible"
+                    data-st-animation="none">
+                    <div class="left scroll-triggered st-group invisible" data-st-animation="big-up">
+                        <img src="assets/project/more/extras-09.jpg" alt="Aarra" />
+                    </div>
+                    <div class="right scroll-triggered st-group invisible" data-st-animation="big-up">
+                        <img src="assets/project/more/extras-10.jpg" alt="Aarra" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <span class="list-hide scroll-triggered invisible" data-st-reset></span>
+
+    </div>
+
+    <div id="connect" class="scroll-triggered st-group invisible" data-st-animation="none" data-st-gutter="0">
+
+        <div class="valign z2">
+
+            <h2 class="scroll-triggered st-group invisible">
+                <a href="mailto:michaelconour@gmail.com">
+                    michael<span class="dark">conour</span><span class="symbol">@</span><span
+                        class="dark">gmail.com</span>
+                </a>
+
+            </h2>
+
+        </div>
+
+
+        <ul>
+            <li><a href="https://twitter.com/michael_conour" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/michaelconour/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li><a href="mailto:michaelconour@gmail.com" target="_blank"><i class="fa fa-google"></i></a></li>
+        </ul>
+
+        <div class="bg layer"></div>
+
+    </div>
+
+    <div id="resume" class="hide"></div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.min.js"></script>
 
 </body>
 
